@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA IMPOSTOS SIMPLES NACIONAL</title>
+    <link rel="stylesheet" href="index.css">
+    </style>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>TABELA SIMPLES NACIONAL- (COMÉRCIO)</h1>
+        <h3>exercicio ano 2023</h3>
+    </div>
+
+    <div class="container">
+
+        <div class="input">
+            <label>FATURAMENTO ULTIMOS 12 MESES:</label>
+            <input type="number" id='fat12'>
+        </div>
+        <div class="input">
+            <label>FATURAMENTO MÊS ATUAL:</label>
+            <input type="number" id='fat1'>
+        </div>
+
+        <button id='calcular' onclick="calcular()">Calcular</button>
+        <button id='limpar' onclick="limpar()">Limpar</button>
+
+        <div class="result" id='resultado'></div>
+        <h4>Para gerar a guia de recolhimento, entre no portal do Simples Nacional:
+            <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Servicos/Grupo.aspx?grp=t&area=1">
+                <button>Clicando Aqui</button>
+            </a>
+        </h4>
+    </div>
+    <div class="ajuste">
+        <p class="vrf">TABELA DE VERIFICAÇÃO<p>
+        <img src="img/1.png"  class="tabela">
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
